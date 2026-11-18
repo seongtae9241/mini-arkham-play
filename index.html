@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 터치 태블릿 (2026-11-18): 세로(짧은 변 761~1100px)는 데스크톱 배치가 좁게 쓰여 손패·행동 버튼이 화면 밖으로 빠졌다 → 폭 760px로 보고 확대해 휴대폰 배치,
+         가로(짧은 변 500px 초과, 긴 변 1280px 미만)는 데스크톱 배치가 1280px 전제라 오른쪽이 잘렸다 → 폭 1280px로 보고 축소. 마우스 기기는 그대로 -->
+    <script>(function(){var m=document.querySelector('meta[name=viewport]');function f(){var s=Math.min(screen.width,screen.height),l=Math.max(screen.width,screen.height),p=matchMedia('(orientation: portrait)').matches,t=matchMedia('(pointer: coarse)').matches;var c='width=device-width, initial-scale=1.0';if(t&&p&&s>760&&s<=1100)c='width=760';else if(t&&!p&&s>500&&l<1280)c='width=1280';if(m.getAttribute('content')!==c)m.setAttribute('content',c);}f();addEventListener('orientationchange',f);addEventListener('resize',f);})();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>The Night of Arkham</title>
-    <script type="module" crossorigin src="/mini-arkham-play/assets/index-D0TBXuq1.js"></script>
-    <link rel="stylesheet" crossorigin href="/mini-arkham-play/assets/index-BR-rrqB1.css">
+    <script type="module" crossorigin src="/mini-arkham-play/assets/index-CZOy-gGd.js"></script>
+    <link rel="stylesheet" crossorigin href="/mini-arkham-play/assets/index-BQPwpj-0.css">
   </head>
   <body>
     <div id="root"></div>
